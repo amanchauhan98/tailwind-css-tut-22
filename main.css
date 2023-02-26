@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    .div-design{
+        height: 10rem;
+        width: 20rem;
+        margin: auto;
+        margin-top: 4rem;
+        padding: 4rem;
+        text-align: center;
+        color: red;
+        background-color: skyblue;
+        border-radius: 3rem;
+    }
+}
+
+@layer components{
+    .design-btn{
+        @apply px-4 py-2 bg-sky-500 text-white mx-[5rem] my-[5rem] rounded-lg hover:bg-white hover:text-sky-500 hover:border-sky-500 hover:border-[0.01rem] hover:drop-shadow-lg hover:shadow-lg hover:shadow-sky-300 active:bg-sky-500 active:text-white
+    }
+}
